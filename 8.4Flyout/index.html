@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>_8.4Flyout</title>
+    <link href="lib/winjs-4.0.1/css/ui-light.css" rel="stylesheet" />
+    <script src="lib/winjs-4.0.1/js/base.js"></script>
+    <script src="lib/winjs-4.0.1/js/ui.js"></script>
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+</head>
+<body class="win-type-body">
+
+    <p>Click the 'Buy' button to launch the purchase confirmation flyout.</p>
+    <button class="win-button action" id="buyButton">Buy</button>
+    <br /><br />
+
+    <!-- Flyout 控件 -->
+    <div id="confirmFlyout" data-win-control="WinJS.UI.Flyout" aria-label="{Confirm purchase flyout}">
+        <div>Your account will be charged $252.</div>
+        <button class="win-button" id="confirmButton">Complete Order</button>
+    </div>
+
+    <div id="status"></div>
+</body>
+</html>
